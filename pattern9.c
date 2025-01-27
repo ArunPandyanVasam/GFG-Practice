@@ -3,24 +3,18 @@
 
 void pattern9(int n)
 {
-    for (int i = 0; i < n; i++)
+    for (int i = 1; i <= n; i++)
     {
         //  space
-        for (int j = 0; j < i; j++)
+        for (int j = 0; j < n - i; j++)
         {
             printf("-");
         }
 
         //  star
-        for (int j = 0; j < ((2 * n) - (i + i + 1)); j++)
+        for (int j = 1; j <= i; j++)
         {
-            printf("*");
-        }
-
-        //  space
-        for (int j = 0; j < i; j++)
-        {
-            printf("-");
+            printf("* ");
         }
 
         puts(" ");
