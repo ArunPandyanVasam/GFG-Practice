@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 
-void pattern13(int n)
+void pattern14(int n)
 {
     for (int i = 0; i < n; i++)
     {
@@ -35,7 +35,7 @@ int main()
     int n;
     printf("Input: ");
     scanf("%d", &n);
-    pattern13(n);
+    pattern14(n);
 
     puts("\n");
     return 0;
