@@ -3,14 +3,34 @@
 
 void pattern13(int n)
 {
-    for (int i = 0; i < n; i++)
+    int spaces;
+    int stars;
+    for (int i = 1; i <= 2 * n - 1; i++)
     {
+
         //  space
-        for (int j = 0; j < n-1-i; j++)
+        spaces = n - i;
+        stars = i + i - 1;
+        if (i > n)
+        {
+            spaces = i - n;
+        }
+        for (int j = 1; j <= spaces; j++)
         {
             printf("-");
         }
 
+        //  star
+        for (int j = 1; j <= stars; j++)
+        {
+            if (j == 1 || j == stars) {
+                printf("*");
+            } else {
+                printf(" ");
+            }
+        }
+
+        puts(" ");
     }
 }
 
